@@ -80,7 +80,7 @@ randombgEle.forEach((span) => {
 
 function randomizeImg() {
   if (backgroundOption === true) {
-    let img = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+    let img = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
     bginterval = setInterval(() => {
       let random = Math.floor(Math.random() * img.length);
       main.style.backgroundImage = 'url("../images/' + img[random] + '")';
