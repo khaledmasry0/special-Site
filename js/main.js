@@ -78,13 +78,27 @@ randombgEle.forEach((span) => {
 
 // control the interval
 
+// control the interval
+
+// function randomizeImg() {
+//   if (backgroundOption === true) {
+//     let img = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+//     bginterval = setInterval(() => {
+//       let random = Math.floor(Math.random() * img.length);
+//       main.style.backgroundImage = 'url("../images/' + img[random] + '")';
+//     }, 15000);
+//   }
+// }
+
 function randomizeImg() {
   if (backgroundOption === true) {
-    let img = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+    // let img = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
     bginterval = setInterval(() => {
-      let random = Math.floor(Math.random() * img.length);
-      main.style.backgroundImage = 'url("../images/' + img[random] + '")';
-    }, 15000);
+      let random = Math.floor(Math.random() * 5);
+      main.style.cssText = `background-image : url("../images/${
+        random + 1
+      }.jpg")`;
+    }, 5000);
   }
 }
 randomizeImg();
