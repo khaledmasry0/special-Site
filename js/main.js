@@ -98,7 +98,7 @@ function randomizeImg() {
       main.style.cssText = `background-image : url("../images/${
         random + 1
       }.jpg")`;
-    }, 5000);
+    }, 15000);
   }
 }
 randomizeImg();
